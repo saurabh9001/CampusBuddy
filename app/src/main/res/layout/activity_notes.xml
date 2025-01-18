@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".NotesActivity">
+
+    <EditText
+        android:id="@+id/etTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Title"
+        android:padding="12dp"
+        android:background="@drawable/edit_text_background"
+        android:textColor="#000000"
+        android:layout_marginBottom="8dp" />
+
+    <EditText
+        android:id="@+id/etDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Description"
+        android:padding="12dp"
+        android:background="@drawable/edit_text_background"
+        android:textColor="#000000"
+        android:layout_below="@id/etTitle"
+        android:layout_marginBottom="8dp" />
+
+    <EditText
+        android:id="@+id/etDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Date (YYYY-MM-DD)"
+        android:padding="12dp"
+        android:background="@drawable/edit_text_background"
+        android:textColor="#000000"
+        android:layout_below="@id/etDescription"
+        android:layout_marginBottom="8dp" />
+
+    <EditText
+        android:id="@+id/etTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Time (HH:mm)"
+        android:padding="12dp"
+        android:background="@drawable/edit_text_background"
+        android:textColor="#000000"
+        android:layout_below="@id/etDate"
+        android:layout_marginBottom="8dp" />
+
+    <EditText
+        android:id="@+id/etAmPm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="AM/PM"
+        android:padding="12dp"
+        android:background="@drawable/edit_text_background"
+        android:textColor="#000000"
+        android:layout_below="@id/etTime"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Note"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="#FFFFFF"
+        android:layout_below="@id/etAmPm"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/btnRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Refresh"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="#FFFFFF"
+        android:layout_below="@id/btnSave"
+        android:layout_marginBottom="16dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewNotes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnRefresh"
+        android:layout_marginTop="8dp" />
+
+</RelativeLayout>

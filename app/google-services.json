@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "497961949850",
+    "project_id": "mysql-50434",
+    "storage_bucket": "mysql-50434.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:497961949850:android:04cb736e0e127fce675d23",
+        "android_client_info": {
+          "package_name": "com.example.mysql"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDjCwuQpImqymEVBMs7_xApHGz1LRJ0D1o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
